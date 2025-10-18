@@ -1,4 +1,4 @@
-class Solution(object):
+
     def reverse_string(s):
         """
         :type s: List[str]
@@ -9,3 +9,5 @@ class Solution(object):
             s[left], s[right] = s[right], s[left]  # swap
             left += 1
             right -= 1
+
+
