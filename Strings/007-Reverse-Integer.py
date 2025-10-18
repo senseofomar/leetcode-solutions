@@ -1,22 +1,21 @@
-class Solution(object):
-    def reverse(x):
-        """
-        :type x: int
-        :rtype: int
-        """
-        # handle negative numbers
-        sign = -1 if x < 0 else 1
-        x_str = str(abs(x))           # convert to string
-        rev_str = x_str[::-1]         # reverse string
-        rev_int = int(rev_str) * sign # convert back to int and restore sign
+def reverse(x):
+    """
+    :type x: int
+    :rtype: int
+    """
+    # handle negative numbers
+    sign = -1 if x < 0 else 1
+    x_str = str(abs(x))           # convert to string
+    rev_str = x_str[::-1]         # reverse string
+    rev_int = int(rev_str) * sign # convert back to int and restore sign
 
-        # handle 32-bit signed integer overflow
-        if rev_int < -2**31 or rev_int > 2**31 - 1:
-            return 0
-        return rev_int
+    # handle 32-bit signed integer overflow
+    if rev_int < -2**31 or rev_int > 2**31 - 1:
+        return 0
+    return rev_int
 
 # two pointer
-def reverse(x):
+def reverse2(x):
     """
     :type x: int
     :rtype: int
