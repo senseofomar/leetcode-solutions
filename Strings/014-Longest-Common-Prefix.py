@@ -10,3 +10,18 @@ def longest_common_prefix1(strs: list[str]) -> str:
                 return prefix
         prefix += ch  # if all matched, keep adding
     return prefix
+
+
+def longest_common_prefix2(strs: list[str]) -> str:
+    if not strs:
+        return ""
+
+    strs.sort()  # Lexicographically
+    first, last = strs[0], strs[-1]
+    prefix = ""
+    for i in range(min(len(first), len(last))):
+        if first[i] == last[i]:
+            prefix += first[i]
+        else:
+            break
+    return prefix
