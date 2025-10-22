@@ -25,3 +25,13 @@ def longest_common_prefix2(strs: list[str]) -> str:
         else:
             break
     return prefix
+
+
+def longest_common_prefix3(strs: list[str]) -> str:
+    prefix = ""
+    for chars in zip(*strs):  # groups by position
+        if len(set(chars)) == 1:
+            prefix += chars[0]
+        else:
+            break
+    return prefix
