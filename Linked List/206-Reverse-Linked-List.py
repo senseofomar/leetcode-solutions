@@ -1,3 +1,4 @@
+# Pointer Reversal Pattern
 #Iterative
 def reverse_list(self, head):
     prev = None  # initially nothing before head
