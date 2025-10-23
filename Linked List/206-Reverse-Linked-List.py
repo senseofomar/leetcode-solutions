@@ -1,5 +1,5 @@
 #Iterative
-def reverseList(self, head):
+def reverse_list(self, head):
     prev = None  # initially nothing before head
     curr = head  # start with first node
 
@@ -10,3 +10,13 @@ def reverseList(self, head):
         curr = nxt  # move curr forward
 
     return prev  # prev becomes new head
+
+#Recursive
+def reverse_list2(self, head):
+    if not head or not head.next:
+        return head
+
+    new_head = self.reverseList(head.next)
+    head.next.next = head
+    head.next = None
+    return new_head
