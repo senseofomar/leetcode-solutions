@@ -1,3 +1,4 @@
+# Vertical scanning Interview approach
 def longest_common_prefix1(strs: list[str]) -> str:
     if not strs:
         return ""
@@ -11,7 +12,7 @@ def longest_common_prefix1(strs: list[str]) -> str:
         prefix += ch  # if all matched, keep adding
     return prefix
 
-
+# Sorting
 def longest_common_prefix2(strs: list[str]) -> str:
     if not strs:
         return ""
@@ -26,7 +27,7 @@ def longest_common_prefix2(strs: list[str]) -> str:
             break
     return prefix
 
-
+# Using zip
 def longest_common_prefix3(strs: list[str]) -> str:
     prefix = ""
     for chars in zip(*strs):  # groups by position
