@@ -1,5 +1,5 @@
 #Fast and slow pointers
-def is_palindrome(self, head):
+def is_palindrome(head):
     if not head or not head.next:
         return True
 
@@ -28,3 +28,11 @@ def is_palindrome(self, head):
         second = second.next
 
     return True
+
+# Convert to array, not optimal
+def is_palindrome2(head):
+    vals = []
+    while head:
+        vals.append(head.val)
+        head = head.next
+    return vals == vals[::-1]
