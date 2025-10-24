@@ -1,5 +1,5 @@
 # Two Pointers
-def mergeTwoLists(list1, list2):
+def merge_two_lists(list1, list2):
     dummy = ListNode()  # placeholder node at start
     tail = dummy  # tail always points to last node in merged list
 
