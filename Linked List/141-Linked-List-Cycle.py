@@ -10,3 +10,13 @@ def has_cycle(head):
             return True
 
     return False  # reached end → no cycle
+
+# HashSet Method (Simpler but not optimal)
+def has_cycle1(head):
+    seen = set()
+    while head:
+        if head in seen:
+            return True
+        seen.add(head)
+        head = head.next
+    return False
