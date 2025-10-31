@@ -7,3 +7,7 @@ def single_number(nums: list[int]) -> int:
     for num, freq in count.items():
         if freq == 1:
             return num
+
+# Math Trick
+def single_number1(nums: list[int]) -> int:
+    return 2 * sum(set(nums)) - sum(nums)
