@@ -11,7 +11,7 @@ def single_number(nums: list[int]) -> int:
 def single_number1(nums: list[int]) -> int:
     return 2 * sum(set(nums)) - sum(nums)
 
-# Bitwise XOR (Best & Optimal)
+# Bitwise XOR (Best & Optimal) Interview
 def single_number2(nums: list[int]) -> int:
     result = 0
     for num in nums:
