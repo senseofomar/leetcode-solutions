@@ -20,8 +20,9 @@ def is_symmetric(root) -> bool:
     return is_mirror(root.left, root.right)
 
 
-from collections import deque
 
+# Iterative BFS Solution (Queue)
+from collections import deque
 
 def is_symmetric2(root) -> bool:
     if not root:
