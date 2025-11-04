@@ -1,3 +1,4 @@
+# Recursive DFS Solution (Most Common)
 def is_symmetric(root) -> bool:
     if not root:
         return True
