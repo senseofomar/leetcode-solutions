@@ -20,3 +20,6 @@ def is_valid_bst(root) -> bool:
         return True
 
     return helper(root)
+
+
+# Inorder Traversal Solution
