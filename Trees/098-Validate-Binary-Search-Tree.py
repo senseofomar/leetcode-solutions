@@ -23,3 +23,20 @@ def is_valid_bst(root) -> bool:
 
 
 # Inorder Traversal Solution
+
+def is_valid_bst1(root) -> bool:
+    prev = float('-inf')
+    return inorder(root)
+
+def inorder(self, node):
+    if not node:
+        return True
+
+    if not self.inorder(node.left):
+        return False
+
+    if node.val <= prev:
+        return False
+    prev = node.val
+
+    return inorder(node.right)
