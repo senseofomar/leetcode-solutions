@@ -1,3 +1,4 @@
+# Recursive Range Check Solution
 def is_valid_bst(root) -> bool:
     def helper(node, low=float('-inf'), high=float('inf')):
         if not node:
