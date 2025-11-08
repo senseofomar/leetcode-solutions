@@ -24,3 +24,6 @@ def level_order(root):
         result.append(level)  # add current level to result
 
     return result
+
+
+# Recursive (DFS style)
