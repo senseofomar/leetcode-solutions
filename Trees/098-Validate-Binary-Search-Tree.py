@@ -23,7 +23,6 @@ def is_valid_bst(root) -> bool:
 
 
 # Inorder Traversal Solution
-
 def is_valid_bst1(root) -> bool:
     prev = float('-inf')
 
