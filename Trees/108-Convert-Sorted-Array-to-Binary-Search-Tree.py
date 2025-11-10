@@ -21,7 +21,7 @@ def sorted_array_to_bst(nums):
 
     return root
 
-
+# Using Nested Tuples
 def sorted_array_to_bst1(nums):
     if not nums:
         return None
@@ -35,6 +35,8 @@ def sorted_array_to_bst1(nums):
     # Return the node as a tuple
     return (root_val, left_subtree, right_subtree)
 
+
+# Using Dictionaries
 def sorted_array_to_bst2(nums):
     if not nums:
         return None
