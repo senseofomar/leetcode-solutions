@@ -20,3 +20,17 @@ def sorted_array_to_bst(nums):
     root.right = sorted_array_to_bst(nums[mid + 1:]) # all elements after mid
 
     return root
+
+
+def sorted_array_to_bst1(nums):
+    if not nums:
+        return None
+
+    mid = len(nums) // 2
+    root_val = nums[mid]
+
+    left_subtree = sorted_array_to_bst(nums[:mid])
+    right_subtree = sorted_array_to_bst(nums[mid + 1:])
+
+    # Return the node as a tuple
+    return (root_val, left_subtree, right_subtree)
