@@ -34,3 +34,15 @@ def sorted_array_to_bst1(nums):
 
     # Return the node as a tuple
     return (root_val, left_subtree, right_subtree)
+
+def sorted_array_to_bst2(nums):
+    if not nums:
+        return None
+
+    mid = len(nums) // 2
+    return {
+        "val": nums[mid],
+        "left": sorted_array_to_bst(nums[:mid]),
+        "right": sorted_array_to_bst(nums[mid + 1:])
+    }
+
