@@ -16,5 +16,4 @@ def first_bad_version(n):
     return left
 
 
-# Test
-print(first_bad_version(5))  # Output: 4
+
