@@ -14,3 +14,6 @@ def rob(nums: list[int]) -> int:
         dp[i] = max(dp[i-1], nums[i] + dp[i-2])
 
     return dp[-1]
+
+
+# Space Optimized (O(1) Space)
