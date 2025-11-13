@@ -8,3 +8,14 @@ def climb_stairs(n: int) -> int:
     for _ in range(3, n + 1):
         a, b = b, a + b  # like Fibonacci
     return b
+
+
+# Recursion with Memoization
+
+def climb_stairs2(n: int, memo={}) -> int:
+    if n <= 2:
+        return n
+    if n in memo:
+        return memo[n]
+    memo[n] = climb_stairs2(n-1, memo) + climb_stairs2(n-2, memo)
+    return memo[n]
