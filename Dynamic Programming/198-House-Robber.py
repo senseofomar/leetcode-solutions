@@ -17,3 +17,10 @@ def rob(nums: list[int]) -> int:
 
 
 # Space Optimized (O(1) Space)
+
+def rob2(nums: list[int]) -> int:
+    prev2, prev1 = 0, 0  # dp[i-2], dp[i-1]
+    for money in nums:
+        new_rob = max(prev1, prev2 + money)
+        prev2, prev1 = prev1, new_rob
+    return prev1
