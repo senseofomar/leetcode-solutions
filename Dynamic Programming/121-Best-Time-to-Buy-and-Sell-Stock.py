@@ -1,4 +1,4 @@
-def maxProfit(prices):
+def maximum_profit(prices):
     min_price = float('inf')
     max_profit = 0
 
