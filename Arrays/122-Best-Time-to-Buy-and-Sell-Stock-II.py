@@ -1,4 +1,4 @@
-def maxProfit(prices):
+def max_profit(prices):
     profit = 0
 
     for i in range(1, len(prices)):
