@@ -3,7 +3,7 @@ import random
 class Solution:
 
     def __init__(self, nums):
-        self.original = nums[:]   # keep copy
+        self.original = nums[:]
         self.array = nums[:]
 
     def reset(self):
