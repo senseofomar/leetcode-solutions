@@ -23,6 +23,7 @@ class MinStack:
 
 
 
+# Solution without class
 
 stack = []
 min_stack = []
