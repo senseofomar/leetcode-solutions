@@ -11,6 +11,9 @@ def fizz_buzz(n: int):
             result.append(str(i))
     return result
 
+
+# Short Pythonic way
+
 def fizz_buzz2(n: int):
     return [
         "FizzBuzz" if i % 15 == 0 else
