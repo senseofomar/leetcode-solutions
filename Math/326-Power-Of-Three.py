@@ -1,6 +1,6 @@
 # Iterative Divide (Clean & Simple)
 
-def isPowerOfThree(n: int) -> bool:
+def is_power_of_three(n: int) -> bool:
     if n <= 0:
         return False
     while n % 3 == 0:
