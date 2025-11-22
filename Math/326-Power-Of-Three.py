@@ -18,3 +18,11 @@ def is_power_of_three1(n: int) -> bool:
 # Mathematical Trick (Fastest)
 def is_power_of_three2(n: int) -> bool:
     return n > 0 and 1162261467 % n == 0
+
+# Logarithm
+import math
+def is_power_of_three3(n: int) -> bool:
+    if n <= 0:
+        return False
+    x = math.log10(n) / math.log10(3)
+    return abs(x - round(x)) < 1e-10
