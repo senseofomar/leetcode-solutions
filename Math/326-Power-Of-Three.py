@@ -14,3 +14,7 @@ def is_power_of_three1(n: int) -> bool:
     if n <= 0 or n % 3 != 0:
         return False
     return is_power_of_three1(n // 3)
+
+# Mathematical Trick (Fastest)
+def is_power_of_three2(n: int) -> bool:
+    return n > 0 and 1162261467 % n == 0
