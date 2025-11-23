@@ -33,6 +33,7 @@ def roman_to_int2(s: str) -> int:
 
     return total
 
+# Dictionary of special cases
 def roman_to_int3(s: str) -> int:
     specials = {
         "IV":4, "IX":9,
