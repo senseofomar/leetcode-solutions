@@ -1,3 +1,4 @@
+# Sieve of Eratosthenes (Best + Fastest)
 def count_primes(n: int) -> int:
     if n <= 2:
         return 0
