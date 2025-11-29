@@ -14,3 +14,19 @@ def count_primes(n: int) -> int:
         p += 1
 
     return sum(is_prime)
+
+# Check primes one by one
+def count_primes1(n: int) -> int:
+    def is_prime(x):
+        if x < 2:
+            return False
+        for i in range(2, int(x**0.5) + 1):
+            if x % i == 0:
+                return False
+        return True
+
+    count = 0
+    for i in range(n):
+        if is_prime(i):
+            count += 1
+    return count
