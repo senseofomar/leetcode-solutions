@@ -30,3 +30,15 @@ def two_sum_brute(nums : list[int], target : int) -> tuple[int, int] | None:
 
 
 print (two_sum_brute([1,2,4], 3))
+
+
+def two_sum_hash(nums : list[int], target : int) -> list[int] | None:
+    seen = {}
+    for i in range(len(nums)):
+        num = nums[i]
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num]= i
+
+print (two_sum_hash([1,7,4], 11))
