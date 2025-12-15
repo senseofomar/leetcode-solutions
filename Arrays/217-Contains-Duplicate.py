@@ -28,7 +28,7 @@ print(contains_duplicate1(numbers))
 
 
 # my approach first try
-def contains_duplicateO(nums):
+def contains_duplicate_sense(nums):
     count = {}
     for num in nums:
         if num not in count:
