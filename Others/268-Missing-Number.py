@@ -5,7 +5,7 @@ def missing_number(nums: list[int]) -> int:
     actual = sum(nums)
     return expected - actual
 
-# Best Xor
+# Best Xor Method
 def missing_number1(nums: list[int]) -> int:
     result = 0
     n = len(nums)
@@ -17,3 +17,11 @@ def missing_number1(nums: list[int]) -> int:
         result ^= num
 
     return result
+
+# sorting method
+def missing_number2(nums: list[int]) -> int:
+    nums.sort()
+    for i in range(len(nums)):
+        if nums[i] != i:
+            return i
+    return len(nums)
