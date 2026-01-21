@@ -1,6 +1,3 @@
-
-
-
 def two_sum_brute(nums : list[int], target : int) -> tuple[int, int] | None:
     for i in range(len(nums)):   #for i, num in enumerate(nums):
         num = nums[i]            #just for improving readability
