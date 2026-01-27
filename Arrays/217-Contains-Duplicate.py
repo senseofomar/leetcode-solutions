@@ -23,4 +23,12 @@ numbers = [1,2,3,3,4]
 print(contains_duplicate1(numbers))
 
 
-
+# my approach first try
+def contains_duplicate_sense(nums):
+    count = {}
+    for num in nums:
+        if num not in count:
+            count[num] = 1
+        else:
+            return True   # found a duplicate immediately
+    return False  # loop ended, no duplicates found
