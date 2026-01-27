@@ -1,7 +1,3 @@
-# Category	      Subtopic
-# Array	          Hashing / Set lookup
-#                 Data Structures → Hash Table
-
 def contains_duplicate(nums)-> bool:
     dupli = []
     for num in nums:
