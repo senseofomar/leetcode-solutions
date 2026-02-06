@@ -1,9 +1,8 @@
 def two_sum_brute(nums : list[int], target : int) -> tuple[int, int] | None:
     for i in range(len(nums)):   #for i, num in enumerate(nums):
-        num = nums[i]            #just for improving readability
+        num = nums[i]            #just for improving readability because without it, we have to do complement = target - nums[i]
         complement = target - num
         for j in range(len(nums)):
-            num = nums[j]
             if j != i and nums[j] == complement:
                 return i, j
     return None
