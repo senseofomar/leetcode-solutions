@@ -3,7 +3,8 @@ def two_sum_brute(nums : list[int], target : int) -> tuple[int, int] | None:
         num = nums[i]            #just for improving readability because without it, we have to do complement = target - nums[i]
         complement = target - num
         for j in range(len(nums)):
-            if j != i and nums[j] == complement:
+            other = nums[j]
+            if j != i and other == complement:
                 return i, j
     return None
 
